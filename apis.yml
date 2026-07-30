@@ -1,8 +1,24 @@
 aid: material-exchange
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/material-exchange.png
 name: Material Exchange
-description: 'Material Exchange is a company surfaced as a portfolio company of partech and added to the
-  API Evangelist network as a stub for enrichment. Sector: Marketplace. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Material Exchange is a sourcing platform that structures early-stage sourcing workflows
+  for product development teams, backed by Partech. It provides a structured, agentic environment - with
+  an AI assistant named Frank - to define sourcing direction, align stakeholders, and coordinate sourcing
+  earlier in product development. The platform helps teams structure briefs, identify relevant suppliers
+  and materials, surface missing cost or compliance data, compare options, and flag gaps before decisions
+  move downstream. No public API, developer portal, SDKs, or documentation surface has been found; this
+  profile was enriched via domain-security probes and public identity discovery only.'
 url: https://raw.githubusercontent.com/api-evangelist/material-exchange/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Marketplace
+- Sourcing
+- Supply Chain
+- Product Development
+- Materials
+- Procurement
+- AI Assistant
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/material-exchange-domain-security.yml
 - type: Website
   url: https://material-exchange.com/
+- type: GitHubOrganization
+  url: https://github.com/material-exchange
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
